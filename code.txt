@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-printf "IP: %s\nHWID: %s\n" "$(curl -s --max-time 5 ifconfig.me || echo N/A)" "$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'\"' '/IOPlatformUUID/{print $4}')" | tee ~/ip_hwid.txt
-=======
 printf "IP: %s\nHWID: %s\n" "$(curl -s --max-time 5 ifconfig.me || echo N/A)" "$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $4}')"
->>>>>>> 3f00267 (run_code false; check_every + timer + max_runs to prevent loops)
