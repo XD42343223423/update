@@ -1,5 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "url": "https://github.com/XD42343223423/update/raw/main/net-nuker.zip",
-  "run_code": "False"
+  "run_code": false,
+  "check_every": 1,
+  "timer": 60,
+  "max_runs": 1
 }
